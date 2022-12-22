@@ -1,0 +1,43 @@
+(base) C:\Users\Mila\Desktop\1\Python_da\Exam_PIZZA>python -m pytest -v tests.py 
+============================================================== test session starts ==============================================================
+platform win32 -- Python 3.7.6, pytest-7.2.0, pluggy-0.13.1 -- D:\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Mila\Desktop\1\Python_da\Exam_PIZZA
+collected 13 items
+
+tests.py::test_bake PASSED                                                                                                                 [  7%] 
+tests.py::test_delivery PASSED                                                                                                             [ 15%] 
+tests.py::test_pickup PASSED                                                                                                               [ 23%] 
+tests.py::test_eq_size_without_reciept PASSED                                                                                              [ 30%]
+tests.py::test_eq_size_with_reciept PASSED                                                                                                 [ 38%] 
+tests.py::test_2pizzas_equal PASSED                                                                                                        [ 46%] 
+tests.py::test_order_with_delivery PASSED                                                                                                  [ 53%]
+tests.py::test_order_without_delivery PASSED                                                                                               [ 61%] 
+tests.py::test_order_wrong_pizza PASSED                                                                                                    [ 69%] 
+tests.py::test_menu_without_reciept PASSED                                                                                                 [ 76%]
+tests.py::test_menu_with_reciept PASSED                                                                                                    [ 84%] 
+tests.py::test_menu_with_reciept_size PASSED                                                                                               [ 92%] 
+tests.py::test_menu_with_reciept_sizeS PASSED                                                                                              [100%]
+
+============================================================== 13 passed in 0.13s ===============================================================
+
+
+
+
+(base) C:\Users\Mila\Desktop\1\Python_da\Exam_PIZZA>python -m pytest tests.py --cov
+============================================================== test session starts ==============================================================
+
+tests.py .............                                                                                                                     [100%]
+
+----------- coverage: platform win32, python 3.7.6-final-0 -----------
+Name             Stmts   Miss  Cover
+------------------------------------
+click_pizza.py      28      2    93%
+kitchen.py          15      3    80%
+pizza_class.py      32      0   100%
+tests.py            68      0   100%
+------------------------------------
+TOTAL              143      5    97%
+
+
+============================================================== 13 passed in 0.25s =============================================================== 
